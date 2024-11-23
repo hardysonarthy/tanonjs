@@ -1,0 +1,28 @@
+{
+  "name": "tanonjs",
+  "version": "1.0.0",
+  "description": "end to end testing tool",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "build": "npm run clean && tsc",
+    "lint": "biome lint ./src",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.9.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "mongodb": "^6.10.0"
+  }
+}
